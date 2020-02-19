@@ -4,8 +4,8 @@ Performance of various ML algorithms on Document Classification
 # 1. [Build Naïve Bayes Model for Document Tagging](https://github.com/whatisname/DocumentClassification/tree/master/multipleTags)
 
 ## Quick Usage Guide
-[Go to Code Folder ](https://github.com/whatisname/DocumentClassification/tree/master/multipleTags)
-[See Main Program main.py](https://github.com/whatisname/DocumentClassification/blob/master/multipleTags/main.py)
+- [Go to Code Folder ](https://github.com/whatisname/DocumentClassification/tree/master/multipleTags)
+- [See Main Program main.py](https://github.com/whatisname/DocumentClassification/blob/master/multipleTags/main.py)
 
 ## Introduction
 
