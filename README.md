@@ -110,9 +110,7 @@ In addition, the program does not perform well in in experiment 2.6. The accurac
 ## Reference
 
 [1] Project Instruction Document
-
 [2] English-words project on GitHub| download link: https://github.com/dwyl/english-words/blob/master/words_dictionary.json
-
 [3] NLTK's list of english stopwords project on GitHub | download link: https://gist.github.com/sebleier/554280 
 
 Code reference
