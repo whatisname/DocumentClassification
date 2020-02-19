@@ -109,21 +109,16 @@ In addition, the program does not perform well in in experiment 2.6. The accurac
 
 ## Reference
 
-[1] Project Instruction Document
-[2] English-words project on GitHub| download link: https://github.com/dwyl/english-words/blob/master/words_dictionary.json
-[3] NLTK's list of english stopwords project on GitHub | download link: https://gist.github.com/sebleier/554280 
+* [1] Project Instruction Document
+* [2] English-words project on GitHub| download link: https://github.com/dwyl/english-words/blob/master/words_dictionary.json
+* [3] NLTK's list of english stopwords project on GitHub | download link: https://gist.github.com/sebleier/554280 
 
 Code reference
-
-[4] Plot a Confusion Matrix on Kaggle| confusion matrix plot:  https://www.kaggle.com/grfiv4/plot-a-confusion-matrix
-
-[5] Custom Ticker1 on matplotlib | https://matplotlib.org/gallery/ticks_and_spines/custom_ticker1.html#sphx-glr-gallery-ticks-and-spines-custom-ticker1-py
-
-[6] The Porter Stemming Algorithm, Python algorithm by Vivake Gupta, recent release date July 2008| http://www.tartarus.org/~martin/PorterStemmer
-
-[7] Dictionary look algorithm | https://github.com/dwyl/english-words
-
-[8] Reuters-21578 Text Categorization Collection| https://archive.ics.uci.edu/ml/machine-learning-databases/reuters21578-mld/reuters21578.html
+* [4] Plot a Confusion Matrix on Kaggle| confusion matrix plot:  https://www.kaggle.com/grfiv4/plot-a-confusion-matrix
+* [5] Custom Ticker1 on matplotlib | https://matplotlib.org/gallery/ticks_and_spines/custom_ticker1.html#sphx-glr-gallery-ticks-and-spines-custom-ticker1-py
+* [6] The Porter Stemming Algorithm, Python algorithm by Vivake Gupta, recent release date July 2008| http://www.tartarus.org/~martin/PorterStemmer
+* [7] Dictionary look algorithm | https://github.com/dwyl/english-words
+* [8] Reuters-21578 Text Categorization Collection| https://archive.ics.uci.edu/ml/machine-learning-databases/reuters21578-mld/reuters21578.html
 
 
 
