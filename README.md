@@ -55,4 +55,70 @@ Figure4: Count all word, no optimization process. (1) Main function. (2) Program
 
 ### 2.2 Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. (Find on GitHub [3])
 
+![fig 5](multipleTags/backup/img/5.png)
+
+Figure5: Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
+
+### 2.3 Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. Dictionary look up. (Find on GitHub [3])
+
+![fig 6](multipleTags/backup/img/6.png)
+
+Figure6: Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. Dictionary look up. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
+
+### 2.4 Word stemming preprocess. Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. (Find on GitHub [3])
+
+![fig 7](multipleTags/backup/img/7.png)
+
+Figure7: Word stemming preprocess. Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
+
+### 2.5 Word stemming preprocess. Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. Dictionary lookup. (Find on GitHub [3])
+
+![fig 8](multipleTags/backup/img/8.png)
+
+Figure8: Word stemming preprocess. Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. Dictionary lookup. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
+
+### 2.6 Use Reuters-21578 Text Categorization Collection (new dataset). [8] Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. No dictionary lookup. 
+
+![fig 9](multipleTags/backup/img/9.png)
+
+Figure9: Use Reuters-21578 Text Categorization Collection (new dataset). [8] Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. No dictionary lookup. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
+
+The result of 2.6 experiment is not well, it will be discussed in Discussion section.
+
+## 3 Result Summary 
+
+![table 2](multipleTags/backup/img/table2.png)
+
+## Discussion
+
+From the summary, the program has highest accuracy when it takes word of length 3-29 (only among these experiences, 3-29 might not be the best range), avoid stop word, but NOT check vocabulary in dictionary and stem word. The highest accuracy among these experiments is 81.75%. 
+
+Another pattern that can be observed from the result is that with spell checking (dictionary lookup) and word stemming, the accuracy somehow decreased. By checking the vocabulary set, I found that the dictionary I found is not complete. Some words, especially for jargon in some area, program will rule out them because it is not in dictionary. For example, “ascii’, “cmd”, “uwaterloo”, “ctx”, “harddisk”. Two main reasons might lead to the decrease of accuracy. First, dictionary is not complete. Common computer word “harddisk” is not included in it. Second, dictionary does not record some abbreviations, but in fact, they usually have very high frequency in certain type of document. The reason of word stemming decreases accuracy remains unclear for now. But The vocabulary set decrease to half of the original size after stemming. Therefore, it could be related to the decrease on the quantity of the training vocabulary set.
+
+From confusion matrix, “Politics” and “religion” has the higher misclassification rate, documents are easily to be misclassified to “PC”. In future work, those three classes could be the focus of misclassification analysis.
+
+In addition, the program does not perform well in in experiment 2.6. The accuracy drops to 68.6%. The assumption is that there are 91 class (Figure9 (4)) and a large portion of classes have insufficient data sample. From Figure9 (3,4) the class with larger sample has higher prediction accuracy. In future, work, it is also a worthwhile direction to remove classes with insufficient sample size.
+
+## Future Work
+
+1.	Select another dataset and test the algorithm. 
+2.	Find best word range (minimum word length and maximum word length). From the summary, the program has highest accuracy when it takes word of length 3-29. (only among these experiences
+3.	Find other factor that can affect accuracy.
+4.	Find the relation between words.
+5.	Analyze massified document.
+
+## Reference
+
+[1] Project Instruction Document
+[2] English-words project on GitHub| download link: https://github.com/dwyl/english-words/blob/master/words_dictionary.json
+[3] NLTK's list of english stopwords project on GitHub | download link: https://gist.github.com/sebleier/554280
+Code reference
+[4] Plot a Confusion Matrix on Kaggle| confusion matrix plot:  https://www.kaggle.com/grfiv4/plot-a-confusion-matrix
+[5] Custom Ticker1 on matplotlib | https://matplotlib.org/gallery/ticks_and_spines/custom_ticker1.html#sphx-glr-gallery-ticks-and-spines-custom-ticker1-py
+[6] The Porter Stemming Algorithm, Python algorithm by Vivake Gupta, recent release date July 2008| http://www.tartarus.org/~martin/PorterStemmer
+[7] Dictionary look algorithm | https://github.com/dwyl/english-words
+[8] Reuters-21578 Text Categorization Collection| https://archive.ics.uci.edu/ml/machine-learning-databases/reuters21578-mld/reuters21578.html
+
+
+
 # 2. Spam Filter
