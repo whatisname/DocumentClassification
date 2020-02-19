@@ -28,6 +28,7 @@ During development, there is also other modules produced for data process: Docum
 Main entrance is file “fileprocess.py”.
 
 Table 1 Important modules/functions demonstration
+
 ![table 1](multipleTags/backup/img/table1.png)
 
 ## Data Structure and Algorithm Logic 
@@ -40,7 +41,18 @@ The program uses 2d array to store word count, vocabulary probabilities and conf
 
 First version is not completed. It uses “pandas” package data frame structure to store vocabulary. It is very slow because the logic in Figure2 is not efficient. Time spent: 1.2 hour (only the total time of reading training dataset).
 
+![fig 3](multipleTags/backup/img/3.png)
 
+Figure3: First Version (experimental stage of document reading algorithm) The line in read square took too much time. Full code is in attachment.
 
+## 2 Final Version (Self Written Core Process Code)
+
+### 2.1 Count all word, no optimization process.
+
+![fig 4](multipleTags/backup/img/4.png)
+
+Figure4: Count all word, no optimization process. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
+
+### 2.2 Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. (Find on GitHub [3])
 
 # 2. Spam Filter
