@@ -121,5 +121,6 @@ Code reference
 * [8] Reuters-21578 Text Categorization Collection| https://archive.ics.uci.edu/ml/machine-learning-databases/reuters21578-mld/reuters21578.html
 
 
-
+<!--
 # 2. Spam Filter
+-->
