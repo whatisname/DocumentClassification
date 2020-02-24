@@ -1,7 +1,4 @@
-# DocumentClassification
-Performance of various ML algorithms on Document Classification
-
-# 1. [Build Naïve Bayes Model for Document Tagging](https://github.com/whatisname/DocumentClassification/tree/master/multipleTags)
+# DocumentClassification [Build Naïve Bayes Model for Document Tagging](https://github.com/whatisname/DocumentClassification/tree/master/multipleTags)
 
 ## Quick Usage Guide
 - [Go to Program Folder >>](https://github.com/whatisname/DocumentClassification/tree/master/multipleTags)
