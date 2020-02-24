@@ -1,4 +1,4 @@
-# DocumentClassification [Build Naïve Bayes Model for Document Tagging](https://github.com/whatisname/DocumentClassification/tree/master/multipleTags)
+# [Build Naïve Bayes Model for Document Tagging](https://github.com/whatisname/DocumentClassification/tree/master/multipleTags)
 
 ## Quick Usage Guide
 - [Go to Program Folder >>](https://github.com/whatisname/DocumentClassification/tree/master/multipleTags)
