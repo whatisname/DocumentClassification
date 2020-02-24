@@ -11,11 +11,11 @@ The main task of this project is to design a program that accept a training data
 
 The main learning algorithm functions are listed below. The program uses VocTable first to read training data and generate vocabulary set and counting array, then calculates the probabilities of each word. Next, pass VocTable to Processor, which loop up and calculate probability of new words and overall probabilities regarding each category. Select the largest one as its predicted label and save to a 2d array too. (Equation showed in Figure1) At last, Processor generate confusion matrix and plot on the screen. Every probability is natural log transformed to preserve precision.
 
-![Classifier Image](multipleTags/backup/img/1.png)
+![Classifier Image](backup/img/1.png)
 
 Figure1: The classifier this program uses to calculate the probabilities that a new document belongs to which class.
 
-![algorithm](multipleTags/backup/img/2.png)
+![algorithm](backup/img/2.png)
 
 Figure2: Learning algorithm used in the program
 
@@ -29,7 +29,7 @@ Main entrance is file “fileprocess.py”.
 
 Table 1 Important modules/functions demonstration
 
-![table 1](multipleTags/backup/img/table1.png)
+![table 1](backup/img/table1.png)
 
 ## Data Structure and Algorithm Logic 
 
@@ -41,7 +41,7 @@ The program uses 2d array to store word count, vocabulary probabilities and conf
 
 First version is not completed. It uses “pandas” package data frame structure to store vocabulary. It is very slow because the logic in Figure2 is not efficient. Time spent: 1.2 hour (only the total time of reading training dataset).
 
-![fig 3](multipleTags/backup/img/3.png)
+![fig 3](backup/img/3.png)
 
 Figure3: First Version (experimental stage of document reading algorithm) The line in read square took too much time. Full code is in attachment.
 
@@ -49,37 +49,37 @@ Figure3: First Version (experimental stage of document reading algorithm) The li
 
 ### 2.1 Count all word, no optimization process.
 
-![fig 4](multipleTags/backup/img/4.png)
+![fig 4](backup/img/4.png)
 
 Figure4: Count all word, no optimization process. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
 
 ### 2.2 Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. (Find on GitHub [3])
 
-![fig 5](multipleTags/backup/img/5.png)
+![fig 5](backup/img/5.png)
 
 Figure5: Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
 
 ### 2.3 Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. Dictionary look up. (Find on GitHub [3])
 
-![fig 6](multipleTags/backup/img/6.png)
+![fig 6](backup/img/6.png)
 
 Figure6: Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. Dictionary look up. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
 
 ### 2.4 Word stemming preprocess. Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. (Find on GitHub [3])
 
-![fig 7](multipleTags/backup/img/7.png)
+![fig 7](backup/img/7.png)
 
 Figure7: Word stemming preprocess. Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
 
 ### 2.5 Word stemming preprocess. Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. Dictionary lookup. (Find on GitHub [3])
 
-![fig 8](multipleTags/backup/img/8.png)
+![fig 8](backup/img/8.png)
 
 Figure8: Word stemming preprocess. Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. Dictionary lookup. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
 
 ### 2.6 Use Reuters-21578 Text Categorization Collection (new dataset). [8] Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. No dictionary lookup. 
 
-![fig 9](multipleTags/backup/img/9.png)
+![fig 9](backup/img/9.png)
 
 Figure9: Use Reuters-21578 Text Categorization Collection (new dataset). [8] Does not count word shorter than 2 chars, and larger than 30 chars. Avoid stopword. No dictionary lookup. (1) Main function. (2) Program output. (3) Confusion matrix. (4) Bar plot of training set category count and total execution time in seconds.
 
@@ -87,7 +87,7 @@ The result of 2.6 experiment is not well, it will be discussed in Discussion sec
 
 ## 3 Result Summary 
 
-![table 2](multipleTags/backup/img/table2.png)
+![table 2](backup/img/table2.png)
 
 ## Discussion
 
